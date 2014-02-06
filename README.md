@@ -20,6 +20,7 @@ Contains R-like factor class with all the features that R's factor has
 Examples
 --------
 
+```
 > execfile("RUtilities.py")
 > execfile("factor.py")
 > x = sample(letters[0:4], 20, True)
@@ -40,3 +41,4 @@ Levels: a  b  c  d
 > y
 a b c d d c d c c c d a d b a c c c d d
 Levels: a  b  c  d
+```
