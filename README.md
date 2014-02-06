@@ -15,3 +15,28 @@ factor.py
 ---------
 
 Contains R-like factor class with all the features that R's factor has
+
+
+Examples
+--------
+
+>>> execfile("RUtilities.py")
+>>> execfile("factor.py")
+>>> x = sample(letters[0:4], 20, True)
+>>> x
+array(['c', 'c', 'b', 'd', 'd', 'c', 'd', 'c', 'c', 'c', 'd', 'a', 'd',
+       'b', 'a', 'c', 'c', 'c', 'd', 'd'], 
+      dtype='|S1')
+
+>>> y = factor(x)
+>>> y
+c c b d d c d c c c d a d b a c c c d d
+Levels: a  b  c  d
+
+>>> y.__class__
+<class '__main__.factor'>
+
+>>> y[0:3] = ["a", "b", "c"]
+>>> y
+a b c d d c d c c c d a d b a c c c d d
+Levels: a  b  c  d
