@@ -41,4 +41,12 @@ Levels: a  b  c  d
 > y
 a b c d d c d c c c d a d b a c c c d d
 Levels: a  b  c  d
+
+# Here we create a 5 batches of 5 random normal distributed numbers each having a different mean
+>> vapply(np.array(range(5)), np.random.normal, size = 5)
+array([[-0.67618853, -0.3939033 ,  0.49074697, -0.65955165, -0.53552188],
+       [ 1.47710633, -0.69960636,  1.08200627,  1.56646386,  2.73198602],
+       [ 1.05342574,  1.76063512,  1.99736665,  1.43769847,  0.08689192],
+       [ 2.46219842,  2.54457608,  2.59306678,  5.48947124,  3.94090388],
+       [ 5.09717554,  3.97830888,  5.23352363,  4.47189075,  2.30385836]])
 ```
